@@ -5,4 +5,5 @@ services:
     ports:
       - "5432:5432"
     volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
       - /mnt/wsl/ubuntu/home/prisma-practice:/var/lib/postgresql/data
